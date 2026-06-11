@@ -1,3 +1,5 @@
+update-interval: 1
+
 animations:
   animations1:
     time: 2

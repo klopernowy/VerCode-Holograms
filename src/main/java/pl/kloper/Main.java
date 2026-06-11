@@ -6,16 +6,21 @@ import org.bukkit.entity.Player;
 import org.bukkit.entity.TextDisplay;
 import org.bukkit.plugin.java.JavaPlugin;
 import pl.kloper.api.Holo;
+import pl.kloper.api.HologramsAPI;
+import pl.kloper.api.HologramsAPIImpl;
 import pl.kloper.manager.AnimationManager;
 import pl.kloper.manager.HologramManager;
 
 public final class Main extends JavaPlugin {
 
     private HologramManager hologramManager;
+    private static HologramsAPI apiInstance;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
+
+        apiInstance = new HologramsAPIImpl(this.hologramManager);
 
         AnimationManager animationManager = new AnimationManager(this);
         this.hologramManager = new HologramManager(this, animationManager);
@@ -57,6 +62,10 @@ public final class Main extends JavaPlugin {
 
             display.teleport(newLoc);
         }
+    }
+
+    public static HologramsAPI getAPI() {
+        return apiInstance;
     }
 
     public HologramManager getHologramManager() {

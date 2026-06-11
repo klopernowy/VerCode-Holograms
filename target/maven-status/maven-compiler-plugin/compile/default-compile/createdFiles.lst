@@ -1,0 +1,11 @@
+pl\kloper\utils\ColorUtil.class
+pl\kloper\manager\HologramManager$1.class
+pl\kloper\api\HologramsAPIImpl.class
+pl\kloper\Main.class
+pl\kloper\manager\HologramManager$HoloImpl.class
+pl\kloper\command\HologramCommand.class
+pl\kloper\api\Holo.class
+pl\kloper\manager\AnimationManager.class
+pl\kloper\api\HologramsAPI.class
+pl\kloper\manager\HologramManager.class
+pl\kloper\manager\HologramManager$HoloImpl$1.class

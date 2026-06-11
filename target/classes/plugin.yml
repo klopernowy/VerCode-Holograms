@@ -1,0 +1,9 @@
+name: VerCode-Holograms
+version: '1.0'
+main: pl.kloper.Main
+api-version: '1.21'
+softdepend: [PlaceholderAPI]
+
+commands:
+  hologram:
+    permission: vercode.command.hologram

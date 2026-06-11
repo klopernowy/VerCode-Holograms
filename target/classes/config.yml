@@ -1,0 +1,7 @@
+animations:
+  animations1:
+    time: 2
+    swapper:
+      - "&e&lTEST"
+      - "&6&lTEST"
+      - "&c&lTEST"
